@@ -1,4 +1,4 @@
-function Button({text, color, fontSize}){
+function Button({text = 'Click Me!', color = 'lightgreen', fontSize=12}){
     const buttonStyle= {
         color: color,
         fontSize: fontSize + 'px',
@@ -12,9 +12,9 @@ function Button({text, color, fontSize}){
 export default function RenderButtons(){
     return(
         <div>
-             <Button text="Click Me!" color="lightgreen" fontSize={12} />
+             <Button  />
              <Button text="Don't Click Me!" color="red" fontSize={12} />
-             <Button text="Click Me!" color="orange" fontSize={12} />
+             <Button color="orange" fontSize={12} />
         </div>
     );
 }
