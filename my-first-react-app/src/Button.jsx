@@ -16,8 +16,8 @@ export default function RenderButtons(){
     return(
         <div>
              <Button text="Google" handleClick={()=> handleButtonClick('https://www.google.com')}  />
-             <Button text="Don't Click Me!" color="red" fontSize={12} />
-             <Button color="orange" fontSize={12} />
+             <Button text="Don't Click Me!" handleClick={()=> handleButtonClick('https://youtu.be/hPr-Yc92qaY?si=j6U0vpTPkYHnehwJ')} color="red" fontSize={12} />
+             <Button text="Nothing to see here" color="orange" handleClick={()=> handleButtonClick('https://images.app.goo.gl/RMRYV1z5AAQRMYym7') } fontSize={12} />
         </div>
     );
 }
